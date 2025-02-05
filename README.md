@@ -1,4 +1,4 @@
-# Audio Transcriber
+# Speech To Text
 
 Este proyecto permite convertir archivos de audio en texto utilizando `pydub` y `speech_recognition` en Python. Actualmente, soporta la transcripción de archivos WAV dividiéndolos en fragmentos de 30 segundos para mejorar la precisión.
 
