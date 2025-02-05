@@ -1,35 +1,35 @@
 # Speech To Text
 
-Este proyecto permite convertir archivos de audio en texto utilizando `pydub` y `speech_recognition` en Python. Actualmente, soporta la transcripción de archivos WAV dividiéndolos en fragmentos de 30 segundos para mejorar la precisión.
+This project allows converting audio files into text using `pydub` and `speech_recognition` in Python. Currently, it supports the transcription of WAV files by splitting them into 30-second fragments to improve accuracy.
 
-## 📌 Características
+## 📌 Features
 
-- Transcripción de audio a texto utilizando Google Speech Recognition.
-- Procesamiento de archivos WAV con `pydub`.
-- División automática del audio en fragmentos de 30 segundos.
-- Exportación del texto transcrito a un archivo `.txt`.
-- Permite pasar la ruta del archivo WAV como parámetro.
+- Audio-to-text transcription using Google Speech Recognition.
+- WAV file processing with `pydub`.
+- Automatic division of audio into 30-second fragments.
+- Exporting transcribed text to a `.txt` file.
+- Allows passing the WAV file path as a parameter.
 
-## 🚀 Instalación
+## 🚀 Installation
 
-### 1️⃣ Clonar el repositorio
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/tu-usuario/audio-transcriber.git
-cd audio-transcriber
+git clone https://github.com/PedroCarassale/speech-to-text.git
+cd speech-to-text
 ```
 
-### 2️⃣ Instalar dependencias
+### 2️⃣ Install dependencies
 
-Asegúrate de tener Python instalado y luego ejecuta:
+Make sure you have Python installed and then run:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Si `ffmpeg` no está instalado, instálalo con:
+If `ffmpeg` is not installed, install it using:
 
-- **Windows (usando Chocolatey)**:
+- **Windows (using Chocolatey)**:
   ```powershell
   choco install ffmpeg
   ```
@@ -42,25 +42,25 @@ Si `ffmpeg` no está instalado, instálalo con:
   brew install ffmpeg
   ```
 
-## 📖 Uso
+## 📖 Usage
 
-### 1️⃣ Convertir un archivo de audio en texto
+### 1️⃣ Convert an audio file to text
 
-Para transcribir un archivo WAV, pásalo como parámetro al ejecutar el script:
+To transcribe a WAV file, pass it as a parameter when running the script:
 
 ```bash
-python app.py ruta/del/archivo.wav
+python speech_to_text.py path/to/audio.wav
 ```
 
-El texto transcrito se guardará en `transcripcion.txt` en la misma carpeta del script.
+The transcribed text will be saved as `transcription.txt` in the same folder as the script.
 
-## 📌 Tecnologías utilizadas
+## 📌 Technologies Used
 
 - Python
 - pydub
 - speech_recognition
 - ffmpeg
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la licencia MIT. ¡Úsalo como quieras! 🚀
+This project is licensed under the MIT License. Use it as you like! 🚀
