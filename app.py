@@ -38,7 +38,7 @@ for i, fragmento in enumerate(fragmentos):
             transcripcion_completa += f"[Error con el servicio de reconocimiento: {e}] "
 
 # Guardar la transcripción en un archivo de texto
-ruta_salida = "C:\\Users\\pedro\\Desktop\\projects\\whisper\\transcripcion.txt"
+ruta_salida = "./transcripcion.txt"
 with open(ruta_salida, "w", encoding="utf-8") as archivo_salida:
     archivo_salida.write(transcripcion_completa)
 
