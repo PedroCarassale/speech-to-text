@@ -1,3 +1,15 @@
-# Audios
+# Carpeta temporal generada por el script
+temp/
+
+# Archivos de audio generados
 *.wav
+*.mp3
+*.m4a
+
+# Archivos de salida de la transcripción
 transcripcion.txt
+
+# Configuraciones de entornos virtuales
+venv/
+.env
+__pycache__/
