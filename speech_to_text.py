@@ -25,7 +25,7 @@ recognizer = sr.Recognizer()
 transcripcion_completa = ""
 
 for i, fragmento in enumerate(fragmentos):
-    fragmento_path = os.path.join(temp_folder, f"fragmento_{i}.wav")
+    fragmento_path = os.path.join(temp_folder, f"{archivo}_fragmento_{i}.wav")
     fragmento.export(fragmento_path, format="wav")
     with sr.AudioFile(fragmento_path) as source:
         audio_data = recognizer.record(source)
